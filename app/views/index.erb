@@ -1,0 +1,15 @@
+<h1 class='container'>Welcome to the Website</h1>
+
+<form class='container'>
+  <% if !logged_in? %>
+  <% else %>
+      <a href="/users/new">Click Here to Register</a><br>
+      <a href="/sessions/new">Click Here to Login</a><br><br>
+  <% end %>
+      <h2>Content will be displayed here:</h2>
+        <ul>
+          <% @posts.each do |post| %>
+           <li> <a href="/post/<%=post.id%>"><%= post.title %> </a>
+          <% end %>
+        </ul>
+</form>

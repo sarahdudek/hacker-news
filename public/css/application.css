@@ -1,3 +1,24 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+
+.answer-response  {
+ margin: 1px;
+ background-color:lightgrey;
+}
+
+ .score-table {
+  padding-top: 10px;
+ }
+
+.comment-body {
+  background-color: #8BCABD;
+}
+
 .error{
   color: red;
 }
